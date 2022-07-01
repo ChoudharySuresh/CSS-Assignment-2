@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1> <span class="heading">Survey</span> Form</h1>
+        </header>
+        
+        <section>
+                <form>
+                      
+                    <p>Let Us Know how we can improve freeCodeCamp</p>
+
+                    <div class="form-input">                        
+                        <label for="username">Name</label>
+                        <input type="text" name="u_name" id="username" required placeholder="Enter your Name">
+                    </div>
+                    
+                    <div class="form-input">
+                        <label for="useremail">Email</label>
+                        <input type="email" name="u_email" id="useremail" required placeholder="Enter your Email">
+                    </div>
+                        
+                    <div class="form-input">
+                        <label for="userage">Age</label>
+                        <input type="number" name="u_age" id="userage" required placeholder="Age">
+                    </div> 
+                    
+                    <div class="form-input">
+                        <label class="bold">Which Option best describes your current role? </label>
+                        <select name="Role" id="role" required>
+                            <option value="#">--Select Option--</option>
+                            <option value="student">Student</option>
+                            <option value="developer">Developer</option>
+                            <option value="software Engineer">Software Engineer</option>
+                            <option value="data Scientist">Data Scientist</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                
+                    <p>How Likely is that you would recommend freeCodeCamp to a friend :</p> 
+                    
+                    <div>
+                            <input type="radio" name="recommend" id="rd_1" value="definitely"> <label for="rd_1"> Definitely</label>
+                            
+                            
+                            <input type="radio" name="recommend" id="rd_2" value="maybe"> <label for="rd_2">Maybe</label> 
+                            
+                            
+                            <input type="radio" name="recommend" id="rd_3" value="not sure"> <label for="rd_3">Not Sure</label>
+                    </div>
+                        
+                        
+                    <p>Things that should be improved in the future (Check all that apply):</p>
+                    <div>
+
+                        <input type="checkbox" id="frontend" value="front_end"> 
+                        <label for="frontend">Front-end Projects</label> 
+                        
+                        
+                        <input type="checkbox" id="backend" value="back_end"> 
+                        <label for="backend">Back-end Projects</label> 
+            
+                        
+                        <input type="checkbox" id="dt" value="data_visualization"> 
+                        <label for="dt">Data Visualization</label> 
+                    </div>
+                          
+                    <input type="submit" value="submit" id="submit-btn">
+                    <input type="reset" value="Reset" id="reset-btn">
+                    
+                </form>
+            </section>
+    </div>
+</body>
+</html>
